@@ -16,6 +16,16 @@ const (
 	elSource
 	elTrack
 	elDoctypeHTML
+	elBasefont
+	elBgsound
+	elCommand
+	elFrame
+	elImage
+	elIsindex
+	elKeygen
+	elMenuitem
+	elNextid
+	elSpacer
 )
 
 var voidElementNames = map[uint8][]byte{
@@ -34,6 +44,16 @@ var voidElementNames = map[uint8][]byte{
 	elSource:      []byte("source"),
 	elTrack:       []byte("track"),
 	elDoctypeHTML: []byte("!DOCTYPE html"),
+	elBasefont: []byte("basefont"),
+	elBgsound:  []byte("bgsound"),
+	elCommand:  []byte("command"),
+	elFrame:    []byte("frame"),
+	elImage:    []byte("image"),
+	elIsindex:  []byte("isindex"),
+	elKeygen:   []byte("keygen"),
+	elMenuitem: []byte("menuitem"),
+	elNextid:   []byte("nextid"),
+	elSpacer:   []byte("spacer"),
 }
 
 // <br { attr }>
@@ -82,3 +102,15 @@ func Track() *gmlElement { return newGmlElement(elTrack, true) }
 func DocTypeHtml() *gmlElement {
 	return newGmlElement(elDoctypeHTML, true)
 }
+
+
+func Basefont() *gmlElement { return newGmlElement(elBasefont, true) }
+func Bgsound() *gmlElement  { return newGmlElement(elBgsound, true) }
+func Command() *gmlElement  { return newGmlElement(elCommand, true) }
+func Frame() *gmlElement    { return newGmlElement(elFrame, true) }
+func Image() *gmlElement    { return newGmlElement(elImage, true) } 
+func Isindex() *gmlElement  { return newGmlElement(elIsindex, true) }
+func Keygen() *gmlElement   { return newGmlElement(elKeygen, true) }
+func Menuitem() *gmlElement { return newGmlElement(elMenuitem, true) }
+func Nextid() *gmlElement   { return newGmlElement(elNextid, true) }
+func Spacer() *gmlElement   { return newGmlElement(elSpacer, true) }

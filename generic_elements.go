@@ -99,6 +99,28 @@ const (
 	elSvg
 	elTime
 	elVideo
+	elAcronym
+	elApplet
+	elBig
+	elBlink
+	elCenter
+	elContent
+	elDir
+	elFont
+	elFrameset
+	elListing
+	elMarquee
+	elMulticol
+	elNobr
+	elNoembed
+	elNoframes
+	elPlaintext
+	elRb
+	elRtc
+	elShadow
+	elStrike
+	elTt
+	elXmp
 )
 
 var elementNames = map[uint8][]byte{
@@ -200,6 +222,28 @@ var elementNames = map[uint8][]byte{
 	elSvg:        []byte("svg"),
 	elTime:       []byte("time"),
 	elVideo:      []byte("video"),
+	elAcronym:    []byte("acronym"),
+	elApplet:     []byte("applet"),
+	elBig:        []byte("big"),
+	elBlink:      []byte("blink"),
+	elCenter:     []byte("center"),
+	elContent:    []byte("content"),
+	elDir:        []byte("dir"),
+	elFont:       []byte("font"),
+	elFrameset:   []byte("frameset"),
+	elListing:    []byte("listing"),
+	elMarquee:    []byte("marquee"),
+	elMulticol:   []byte("multicol"),
+	elNobr:       []byte("nobr"),
+	elNoembed:    []byte("noembed"),
+	elNoframes:   []byte("noframes"),
+	elPlaintext:  []byte("plaintext"),
+	elRb:         []byte("rb"),
+	elRtc:        []byte("rtc"),
+	elShadow:     []byte("shadow"),
+	elStrike:     []byte("strike"),
+	elTt:         []byte("tt"),
+	elXmp:        []byte("xmp"),
 }
 
 // <html { attr }> { children } </html>
@@ -330,3 +374,25 @@ func Picture() *gmlElement    { return newGmlElement(elPicture, false) }
 func Svg() *gmlElement        { return newGmlElement(elSvg, false) }
 func Time() *gmlElement       { return newGmlElement(elTime, false) }
 func Video() *gmlElement      { return newGmlElement(elVideo, false) }
+
+func Acronym() *gmlElement   { return newGmlElement(elAcronym, false) }
+func Applet() *gmlElement    { return newGmlElement(elApplet, false) }
+func Big() *gmlElement       { return newGmlElement(elBig, false) }
+func Blink() *gmlElement     { return newGmlElement(elBlink, false) }
+func Center() *gmlElement    { return newGmlElement(elCenter, false) }
+func Dir() *gmlElement       { return newGmlElement(elDir, false) }
+func Font() *gmlElement      { return newGmlElement(elFont, false) }
+func Frameset() *gmlElement  { return newGmlElement(elFrameset, false) }
+func Listing() *gmlElement   { return newGmlElement(elListing, false) }
+func Marquee() *gmlElement   { return newGmlElement(elMarquee, false) }
+func Multicol() *gmlElement  { return newGmlElement(elMulticol, false) }
+func Nobr() *gmlElement      { return newGmlElement(elNobr, false) }
+func Noembed() *gmlElement   { return newGmlElement(elNoembed, false) }
+func Noframes() *gmlElement  { return newGmlElement(elNoframes, false) }
+func Plaintext() *gmlElement { return newGmlElement(elPlaintext, false) }
+func Rb() *gmlElement        { return newGmlElement(elRb, false) }
+func Rtc() *gmlElement       { return newGmlElement(elRtc, false) }
+func Shadow() *gmlElement    { return newGmlElement(elShadow, false) }
+func Strike() *gmlElement    { return newGmlElement(elStrike, false) }
+func Tt() *gmlElement        { return newGmlElement(elTt, false) }
+func Xmp() *gmlElement       { return newGmlElement(elXmp, false) }
