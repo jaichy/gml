@@ -7,7 +7,7 @@ The library is designed to be minimal, predictable, and runtime free.
 ### Go (gml)
 
 ```go
-import "github.com/501urchin/gml"
+import "github.com/jaichy/gml"
 
 func Example() gml.GmlElement {
 	return gml.Div().

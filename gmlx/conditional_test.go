@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/501urchin/gml"
+	"github.com/jaichy/gml"
 )
 
 func TestConditional(t *testing.T) {

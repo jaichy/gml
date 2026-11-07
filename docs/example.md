@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/501urchin/gml"
-	"github.com/501urchin/gml/gmlx"
+	"github.com/jaichy/gml"
+	"github.com/jaichy/gml/gmlx"
 )
 
 const stylesheet = `/* Global layout */

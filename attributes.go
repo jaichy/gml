@@ -3,7 +3,7 @@ package gml
 import (
 	"io"
 
-	"github.com/501urchin/gml/pkg"
+	"github.com/jaichy/gml/pkg"
 )
 
 type Attr struct {

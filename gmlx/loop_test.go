@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/501urchin/gml"
+	"github.com/jaichy/gml"
 )
 
 func TestMap(t *testing.T) {

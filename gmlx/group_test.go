@@ -3,7 +3,7 @@ package gmlx
 import (
 	"testing"
 
-	"github.com/501urchin/gml"
+	"github.com/jaichy/gml"
 )
 
 func TestGroup(t *testing.T) {

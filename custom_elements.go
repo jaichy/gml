@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/501urchin/gml/pkg"
+	"github.com/jaichy/gml/pkg"
 )
 
 // text content

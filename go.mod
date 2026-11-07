@@ -1,4 +1,4 @@
-module github.com/501urchin/gml
+module github.com/jaichy/gml
 
 go 1.25.3
 

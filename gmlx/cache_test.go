@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/501urchin/gml"
+	"github.com/jaichy/gml"
 )
 
 func TestMemoize(t *testing.T) {

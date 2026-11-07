@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/501urchin/gml"
-	"github.com/501urchin/gml/pkg"
 	"github.com/cespare/xxhash/v2"
+	"github.com/jaichy/gml"
+	"github.com/jaichy/gml/pkg"
 )
 
 type store struct {
